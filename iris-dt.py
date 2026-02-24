@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_st
 max_depth = 1
 
 # apply mlflow
-mlflow.set_experiment('iris-dt')
+mlflow.set_experiment('iris-dt1')
 
 with mlflow.start_run():
     dt = DecisionTreeClassifier(max_depth=max_depth)
